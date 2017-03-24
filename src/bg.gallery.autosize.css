@@ -1,0 +1,43 @@
+/*
+
+author: BG (c) 2017, bruno.onlyme@gmail.com, https://bgstudio.online
+version: initial release @2017-03-23
+name: autosize gallery control
+
+*/
+
+
+.gallery {
+    margin: 3em 0;
+    visibility: hidden;
+}
+.gallery .clear {
+    clear: both;
+}
+.gallery .items .item {
+    background: #e2c6b1;
+}
+.gallery .items > .item {
+    float: left;
+    margin: 0 1px 1px 0;
+    height: auto !important;
+    /*min-height: 143px;*/
+    /*transition: width 0.5s, height 0.5s;*/
+}
+.gallery .items > .item:nth-last-child(1) {
+    display: block !important;
+    margin-right: 0 !important;
+}
+.gallery .items > .item > * {
+    display: inline-block;
+}
+.gallery .items .item.item-more a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+.gallery .items .item.item-more a span {
+    text-align: center;
+    width: 100%;
+}

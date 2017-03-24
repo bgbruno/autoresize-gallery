@@ -1,0 +1,19 @@
+/*
+
+author: BG (c) 2017, bruno.onlyme@gmail.com, https://bgstudio.online
+version: initial release @2017-03-23
+name: autosize gallery control
+
+*/
+
+body {
+    background: #e69ba0;
+    background: #222222;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+i.fa {
+    width: 1em;
+}
