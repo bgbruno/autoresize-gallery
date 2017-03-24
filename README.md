@@ -1,6 +1,6 @@
 # AutosizeGallery
 
-AutosizeGallery is small javascript library for dynamically expand items to their parent container automaticaly. Very good addon within responsive layouts.
+AutosizeGallery is small javascript library for dynamically expand items to their parent container automaticaly. It shown in every time only required rows and last item with link to show catalog detail. Very good addon within responsive layouts.
 
 ## Quick start
 
@@ -44,14 +44,14 @@ Wrap your items (`div`, `a`, `img`, `span`, `li` etc.) with a container element 
 ```html
 <div class="gallery gallery-autosize" data-itemWidth="210" data-itemHeight="140" data-itemMargin="1" data-itemsRowsCount="2">
   <div class="items">
-      <span class="item"><img src="example-noodles.jpg"></span>
-      <span class="item"><img src="example-noodles.jpg"></span>
-      <a class="item" href=""><img src="example-noodles.jpg"></a>
-      <a class="item" href=""><img src="example-noodles.jpg"></a>
-      <div class="item"><span>Div Content</span></div>
-      <div class="item"><span>Div Content</span></div>
-      <span class="item"><span>Span Content</span></span>
-      <span class="item"><span>Span Content</span></span>
+      <span class="item"><img src="image.jpg"></span>
+      <span class="item"><img src="image.jpg"></span>
+      <a class="item" href=""><img src="image.jpg"></a>
+      <a class="item" href=""><img src="image.jpg"></a>
+      <div class="item"><span>content</span></div>
+      <div class="item"><span>content</span></div>
+      <span class="item"><span>content</span></span>
+      <span class="item"><span>content</span></span>
       <div class="item item-more"><a><span>View more ></span></a></div>
   </div>
   <div class="clear"></div>
