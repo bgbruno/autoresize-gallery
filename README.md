@@ -1,8 +1,8 @@
 [![Autosize Gallery plugin](https://raw.githubusercontent.com/brunogarett/autoresize-gallery/master/docs/cover.jpg)](https://bgstudio.online/)
 
-# AutosizeGallery
+# Autosize Gallery
 
-AutosizeGallery is small javascript library for dynamically expand items to their parent container automaticaly. It shown in every time only required rows and last item with link to show catalog detail. Very good addon within responsive layouts.
+AutosizeGallery is small javascript library for dynamically expand items to their parent container automaticaly. It shown in every time only required rows and last item with link to show catalog detail. Great for responsive layouts.
 
 ## Quick start
 
@@ -64,7 +64,7 @@ Wrap your items (`div`, `a`, `img`, `span`, `li` etc.) with a container element 
 
 ## Documentation
 
-Settings:
+Options:
 
   * `data-itemWidth` set initial width item for basic design state.
   * `data-itemHeight` set initial height item for basic design state.
