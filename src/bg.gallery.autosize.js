@@ -8,23 +8,12 @@
 // control init
 
 
-// immediatally
 (function() {
     document.getElementsByClassName('gallery-autosize')[0].style['visibility'] = 'hidden';
 });
-// jq load
-$(function() {
-});
-// doc load
-$(document).ready(function() {
-});
-
-// win load --- res loaded
 $(window).on("load", function() {
     processControl('.gallery-autosize');
 });
-
-// win resize
 $(window).on('resize', function() {
     processControl('.gallery-autosize');
 });
@@ -61,7 +50,8 @@ function resizeItems(jqControl) {
     var itemWidth = $(galleryControl).attr('data-itemWidth');
     var itemHeight = $(galleryControl).attr('data-itemHeight');
     var itemMargin = $(galleryControl).attr('data-itemMargin');
-    var itemsRowsCount = $(galleryControl).attr('data-itemsRowsCount');
+    var itemsMinRowsCount = $(galleryControl).attr('data-itemsMinRowsCount');
+    var itemsMinCount = $(galleryControl).attr('data-itemsMinCount');
     var allItems = $(galleryControl).find('.items > *');
     var allItemsContents = $(galleryControl).find('.items > * > *');
     var controlWidth = $(galleryControl).parent().width();
@@ -99,9 +89,13 @@ function resizeItems(jqControl) {
         $(this).css('height', '');
     });
     
-    // set hide items outside 2rows
+    // set hide items outside minimal rows
     var availableItemsCountPerRow = Math.floor(controlWidth / itemWidth);
-    var outsideItems = '.item:nth-child(n+' + (itemsRowsCount * availableItemsCountPerRow) + ')';
+    var shownItemsCount = itemsMinRowsCount * availableItemsCountPerRow;
+    if (shownItemsCount < itemsMinCount) {
+        shownItemsCount = Math.ceil(itemsMinCount / availableItemsCountPerRow) * availableItemsCountPerRow;
+    }
+    var outsideItems = '.item:nth-child(n+' + shownItemsCount + ')';
     $(galleryControl).find(outsideItems).each(function() {
         $(this).css('display', 'none');
     });
@@ -132,3 +126,5 @@ function resizeItems(jqControl) {
     });
     
 }
+
+
