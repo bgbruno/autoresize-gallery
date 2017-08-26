@@ -44,7 +44,7 @@ Put the script at the [bottom](https://developer.yahoo.com/performance/rules.htm
 Wrap your items (`div`, `a`, `img`, `span`, `li` etc.) with a container element (`div`, `ul` etc.) and set them class `item`. Parent control class `gallery-autosize` is mandatory to apply proper function:
 
 ```html
-<div class="gallery gallery-autosize" data-itemWidth="210" data-itemHeight="140" data-itemMargin="1" data-itemsRowsCount="2">
+<div class="gallery gallery-autosize" data-itemWidth="210" data-itemHeight="140" data-itemMargin="1" data-itemsMinRowsCount="2" data-itemsMinCount="11">
   <div class="items">
       <span class="item"><img src="image.jpg"></span>
       <span class="item"><img src="image.jpg"></span>
@@ -69,7 +69,8 @@ Options:
   * `data-itemWidth` set initial width item for basic design state.
   * `data-itemHeight` set initial height item for basic design state.
   * `data-itemMargin` set indent items.
-  * `data-itemsRowsCount` set maximal shown rows of items.
+  * `data-itemsMinRowsCount` set minimum shown rows of items.
+  * `data-itemsMinCount` set minimum shown items.
   
 ## Contributing
 
