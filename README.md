@@ -4,6 +4,10 @@
 
 AutosizeGallery is small javascript library for dynamically expand items to their parent container automaticaly. It shown in every time only required rows and last item with link to show catalog detail. Great for responsive layouts.
 
+### Live example
+
+https://webcloud.io/admin@bgstudio.online/bgstudio.online/shared/autoresize-gallery/examples
+
 ## Quick start
 
 ### Install
