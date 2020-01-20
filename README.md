@@ -84,4 +84,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The code and the documentation are released under the [MIT License](LICENSE).
 
-[Bruno BG](https://bgstudio.online)
+[Bruno BG](https://bgbruno.com)
