@@ -6,7 +6,7 @@ AutosizeGallery is small javascript library for dynamically expand items to thei
 
 ### Live example
 
-https://webcloud.io/admin@bgstudio.online/bgstudio.online/shared/autoresize-gallery/examples
+https://bgbruno.com/preview/autoresize-gallery/examples/
 
 ## Quick start
 
